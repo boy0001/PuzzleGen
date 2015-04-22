@@ -15,7 +15,7 @@ public class Main {
         Random r = new Random();
         for (int i = 0; i < 1000; i++) {
             width = r.nextInt(3) + 2;
-            height = r.nextInt(3) + 2;
+            height = r.nextInt(2) + 2;
             Node goal = getBase(width, height);
             Node initial = getPuzzle(goal, width, width * height, moves);
             saveState(initial, goal, width, height, "RANDOM" + i + ".txt");
