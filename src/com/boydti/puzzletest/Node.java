@@ -2,7 +2,7 @@
  * Copyright (c) Jesse Boyd 2015 ALL RIGHTS RESERVED
  */
 
-package com.boydti.puzzlegen;
+package com.boydti.puzzletest;
 
 import java.util.Arrays;
 
