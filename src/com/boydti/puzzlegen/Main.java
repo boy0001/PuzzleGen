@@ -38,7 +38,7 @@ public class Main {
             }
         }
         
-        String lines = width + "x" + height + "\n";
+        String lines = height + "x" + width + "\n";
         String prefix = "";
         
         for (int i = 1; i < initial.data.length; i++) {
