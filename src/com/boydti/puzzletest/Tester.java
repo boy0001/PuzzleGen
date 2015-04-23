@@ -39,7 +39,7 @@ public class Tester {
 	    System.out.flush();
 	    System.setOut(old);
 	    
-	    String[] split = os.toString().split("\r\n");
+	    String[] split = os.toString().split("\\r?\\n");
 	    for (int i = 0; i < split.length; i++) {
 	    	if (i % 2 == 0) {
 	    		explores[i/2] = Integer.parseInt(split[i].split(" ")[2]);

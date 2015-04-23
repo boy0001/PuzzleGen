@@ -25,12 +25,16 @@ public class Main {
     	{
     		int WIDTH = 3;
     		int HEIGHT = 3;
-    		String METHOD = "AS";
-    		int num_tests = 10;
+    		String[] METHODS = {"BFS", "GBFS", "AS", "CUS2", "CUS1", "DFS"};
+    		int num_tests = 100;
     		String classpath = "com.boydti.puzzle.Main";
     		boolean random = false;
     		try {
-    			new Tester(classpath, WIDTH, HEIGHT, METHOD, num_tests, random);
+    			for (String method : METHODS) {
+    				System.out.println("--- " + method + " ---");
+    				new Tester(classpath, WIDTH, HEIGHT, method, num_tests, random);
+    				System.out.println("-----------");
+    			}
     		}
     		catch (Exception e) {
     			e.printStackTrace();
